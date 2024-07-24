@@ -10,6 +10,6 @@ services:
       - "7432:5432"
     volumes:
 #      - pgdata:/var/lib/postgresql/data
-      - ../../database:/docker-entrypoindt-initdb.d
+      - ../../database:/docker-entrypoint-initdb.d
 #volumes:
 #  pgdata:
