@@ -1,6 +1,6 @@
 from sqlalchemy import Boolean, Column, ForeignKey, Integer, String, ARRAY
 
-from urtaRent.repositiries.db import Base
+from urtaRent.models.db import Base
 
 
 class House(Base):

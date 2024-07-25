@@ -1,6 +1,6 @@
 from sqlalchemy import Column, String
 
-from urtaRent.repositiries.db import Base
+from urtaRent.models.db import Base
 
 
 class Owner(Base):

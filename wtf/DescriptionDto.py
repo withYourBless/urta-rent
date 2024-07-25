@@ -1,10 +1,10 @@
 from pydantic import BaseModel
-import BathroomType
+import BathroomTypeDto
 
 
-class Description(BaseModel):
+class DescriptionDto(BaseModel):
     id: str
-    bathroom_type: BathroomType
+    bathroom_type: BathroomTypeDto
     towels: bool
     linen: bool
     furniture: list[str]
@@ -15,3 +15,6 @@ class Description(BaseModel):
     floor_amount: int
     appliances: list[str]
     utilities: list[str]
+
+    class Config:
+        from_attributes = True

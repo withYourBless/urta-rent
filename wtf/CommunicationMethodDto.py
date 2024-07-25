@@ -1,7 +1,7 @@
-from pydantic import Enum
+from enum import Enum
 
 
-class CommunicationMethod(Enum):
+class CommunicationMethodDto(Enum):
     TELEGRAM = "TELEGRAM",
     PHONE = "PHONE",
     WHATSAPP = "WHATSAPP"

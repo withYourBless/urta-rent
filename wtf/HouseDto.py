@@ -1,7 +1,7 @@
 from pydantic import BaseModel
 
 
-class House(BaseModel):
+class HouseDto(BaseModel):
     id: str
     description_id: str
     title: str
@@ -10,3 +10,6 @@ class House(BaseModel):
     address: str
     availability: bool = True
     photos: list[str]
+
+    class Config:
+        from_attributes = True

@@ -1,6 +1,6 @@
 from sqlalchemy import Column, ForeignKey, String, DateTime
 
-from urtaRent.repositiries.db import Base
+from urtaRent.models.db import Base
 
 
 class Booking(Base):

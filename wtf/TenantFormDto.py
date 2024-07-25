@@ -1,16 +1,20 @@
 from datetime import date
 
 from pydantic import BaseModel
-import CommunicationMethod
+
+from urtaRent.dto import CommunicationMethodDto
 
 
-class TenantForm(BaseModel):
+class TenantFormDto(BaseModel):
     id: str
     house_id: int
     name: str
     phone_number: str
-    communication_method: CommunicationMethod = "PHONE"
+    communication_method: CommunicationMethodDto = "PHONE"
     guest_number: int
     checkin: date
     checkout: date
     comment: str
+
+    class Config:
+        from_attributes = True

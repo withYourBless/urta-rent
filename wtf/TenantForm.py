@@ -1,7 +1,7 @@
 from sqlalchemy import Column, ForeignKey, Integer, String, Enum, DateTime
 
-from urtaRent.repositiries.db import Base
-from urtaRent.models.CommunicationMethod import CommunicationMethod
+from urtaRent.models.db import Base
+from CommunicationMethod import CommunicationMethod
 
 
 class TenantForm(Base):

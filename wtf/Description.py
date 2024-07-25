@@ -1,7 +1,7 @@
 from sqlalchemy import Boolean, Column, Integer, String, ARRAY, Enum, Float
 
-from urtaRent.repositiries.db import Base
-from urtaRent.models.BathroomType import BathroomType
+from urtaRent.models.db import Base
+from BathroomType import BathroomType
 
 
 class Description(Base):
