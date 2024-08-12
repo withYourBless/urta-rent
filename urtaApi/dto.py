@@ -74,7 +74,7 @@ class TenantForm(BaseModel):
     house_id: int
     name: str
     phone_number: str
-    communication_method: CommunicationMethod = 'PHONE'
+    communication_method: CommunicationMethod
     guest_number: int
     checkin: date
     checkout: date

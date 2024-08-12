@@ -28,7 +28,7 @@ def get_houses_by_owner_id(db: Session, owner_id: str):
 
 
 def get_owner_by_house_id(db: Session, house_id: str):
-    return get_owner_by_id(db.query(models.OwnerHouse).filter(house_id == models.House.id).first())  # pipipupu
+    return get_owner_by_id(db.query(models.OwnerHouse).filter(house_id == models.House.id).first())
 
 
 def get_tenant_form_by_house_id(db: Session, house_id: str):

@@ -2,7 +2,7 @@ import enum
 from sqlalchemy import Column, ForeignKey, String, DateTime, Integer, Boolean, ARRAY, Float, Enum
 from sqlalchemy.orm import relationship
 
-from urtaApi.db import Base
+from urtaApi.dsn import Base
 from urtaApi.dto import BathroomType, CommunicationMethod
 
 
