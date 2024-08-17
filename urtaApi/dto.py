@@ -14,6 +14,8 @@ class Owner(BaseModel):
     name: str
     phone_number: str
     telegram: str
+    password: str
+    role: str
 
     class Config:
         from_attributes = True
@@ -79,6 +81,62 @@ class TenantForm(BaseModel):
     checkin: date
     checkout: date
     comment: str
+
+    class Config:
+        from_attributes = True
+
+
+class DescriptionIn(BaseModel):
+    bathroom_type: BathroomType
+    towels: bool
+    linen: bool
+    furniture: list[str]
+    barbecue_area: bool
+    garage: bool
+    house_area: float
+    room_amount: int
+    floor_amount: int
+    appliances: list[str]
+    utilities: list[str]
+
+    class Config:
+        from_attributes = True
+
+
+class HouseIn(BaseModel):
+    owner_id: str
+    description_id: str
+    title: str
+    price: int
+    max_capacity: int
+    address: str
+    availability: bool = True
+    photos: list[str]
+
+    class Config:
+        from_attributes = True
+
+
+class TenantFormIn(BaseModel):
+    house_id: int
+    name: str
+    phone_number: str
+    communication_method: CommunicationMethod
+    guest_number: int
+    checkin: date
+    checkout: date
+    comment: str
+
+    class Config:
+        from_attributes = True
+
+
+class OwnerIn(BaseModel):
+    name: str
+    phone_number: str
+    telegram: str
+    password: str
+    role: str
 
     class Config:
         from_attributes = True

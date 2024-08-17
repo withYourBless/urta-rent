@@ -60,7 +60,8 @@ class Owner(Base):
     phone_number = Column(String)
     telegram = Column(String)
     houses = relationship("House", back_populates="owner")
-
+    role = Column(String, default="user")
+    password = Column(String)
 
 
 class TenantForm(Base):
