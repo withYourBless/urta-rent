@@ -1,0 +1,9 @@
+dsn:
+  user: "postgres"
+  host: "localhost"
+  port: "7432"
+  database: "urta"
+
+app:
+  host: "127.0.0.1"
+  port: 8000
