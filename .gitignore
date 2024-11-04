@@ -1,2 +1,5 @@
 .idea
 .DS_Store
+.env
+urtaApi/__pycache__/
+routes/__pycache__/
